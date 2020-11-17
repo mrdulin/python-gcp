@@ -19,3 +19,8 @@ def cors_enabled_function(request):
     }
 
     return (json.dumps({'status': 'sucess'}), 200, headers)
+
+
+# Deploy
+# 1. cd cloud-functions/cors
+# 2. gcloud functions deploy cors_enabled_function --runtime python37 --trigger-http --allow-unauthenticated
